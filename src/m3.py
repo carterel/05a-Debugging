@@ -122,8 +122,8 @@ def broken_1(m):
     #    **  use (call) the   is_prime   function that is DEFINED ABOVE.
     count = 0
     for k in range((2 * m) + 1):
-        if k > m:
-            if is_prime(m):
+        if k >= (m-1):
+            if is_prime(k):
                 count = count + 1
 
     return count
